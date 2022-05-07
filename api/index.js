@@ -57,5 +57,9 @@ app.use((erro, requisicao, resposta, proximo) => {
 });
 
 app.listen(config.get("api.porta"), () =>
-  console.log(`A API está funcionando, na porta ${config.get("api.porta")}!`)
+  console.log(
+    `A API está funcionando, na porta ${config.get(
+      "api.porta"
+    )} base porta ${config.get("mysql.host")} e ${config.get("mysql.port")}!`
+  )
 );
