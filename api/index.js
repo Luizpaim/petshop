@@ -60,6 +60,6 @@ app.listen(config.get("api.porta"), () =>
   console.log(
     `A API está funcionando, na porta ${config.get(
       "api.porta"
-    )} base porta ${config.get("mysql.host")} e ${config.get("mysql.port")}!`
+    )} base porta ${config.get("mysql.host")}!`
   )
 );
