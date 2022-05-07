@@ -13,7 +13,7 @@ roteador.get("/", async (requisicao, resposta, proximo) => {
     );
     return resposta.send(serializador.serializar(resultados));
   } catch (error) {
-    return proximo(erro);
+    return proximo(error);
   }
 });
 
